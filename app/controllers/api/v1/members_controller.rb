@@ -12,8 +12,7 @@ class Api::V1::MembersController < ApplicationController
 
   # GET /members/:id
   def show
-    @members = Member.all
-    render json: @members
+    render json: @member
   end
 
   # POST /members
