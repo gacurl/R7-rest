@@ -2,7 +2,7 @@ class Api::V1::FactsController < ApplicationController
   include AuthenticationCheck
 
   before_action :is_user_logged_in
-  before_action :set_member, only: [:index, :show, :update]
+  before_action :set_member, only: [:index, :show, :update, :destroy]
   before_action :set_fact, only: [:show, :update, :destroy]
 
   # GET /members/:member_id/facts

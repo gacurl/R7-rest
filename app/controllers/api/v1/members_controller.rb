@@ -30,7 +30,7 @@ class Api::V1::MembersController < ApplicationController
   # PUT /members/:id
   def update
     if @member.update(member_params)
-      render json: { message: 'The member record was updated successfully' }, status: 201
+      render json: { message: 'The member record was updated successfully' }, status: 200
     else
       render json: { error: "Oof - this member record couldn't be updated: #{@member.errors.full_messages.to_sentence}" }, status: 404
     end
