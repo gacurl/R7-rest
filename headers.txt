@@ -8,12 +8,11 @@ Referrer-Policy: strict-origin-when-cross-origin
 Access-Control-Expose-Headers: authorization
 Content-Type: application/json; charset=utf-8
 Vary: Accept
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg1MTQ2ODAwLCJleHAiOjE2ODUxNTA0MDAsImp0aSI6IjhjNmVkODhkLWZmNGEtNDlhOS05ZWM5LTQyNjMwYzg4YjZmZiJ9.tkKucC8ebiei9O6zgC63HvMrVkexeST8FLh34a6_Hss
-Set-Cookie: _interslice_session=M0oiykohnCq3rSjFbflff3mFkmgHEMVNEcM36nHsnxDUmdn%2FzWCWQH9uWWuJdLIr7P0OetW83TyPsjHh0ExWUNTqpdFt8CcIE%2Bfy5%2B6iZP%2BjsY5AOktYKOhli4FZc%2FPnrpp0R8IoYEzKzhfMdwMBXScEc5lKTllpFv6uJLy7759qs5uuqzOZhQk53ogh444XqJ31jdO6Uanq4fhlq13207iYLGEOq19lwV24S6K27APZQZFqvB9oTN%2Bd6r9%2FMXL%2FSvum2RxJQ2R1u6Zmd73Lek3ygJKImdUI4AmD--mzsUMsWptb8inxAv--yxATkPDuOT49ZF9OthBZaQ%3D%3D; path=/; HttpOnly; SameSite=Lax
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg1OTEzOTU0LCJleHAiOjE2ODU5MTc1NTQsImp0aSI6IjI2MzNjYzRiLTc0OTUtNDc4Zi1hNmJjLTY5ZWU5YjQ2ODcyZCJ9.c7P54yRYCQ8RwXJX1ZqTIKDt0n6KPdGrKz5GYDRsZlI
 ETag: W/"36cb9f6def08029b9c6bff3c14a98017"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 781cb3fb-e199-4eb5-bc12-390629d50b82
-X-Runtime: 0.205437
-Server-Timing: start_processing.action_controller;dur=0.16, sql.active_record;dur=1.19, instantiation.active_record;dur=0.07, process_action.action_controller;dur=196.63
+X-Request-Id: abcb58de-0df8-4e7b-b929-f76d2c872f05
+X-Runtime: 0.262937
+Server-Timing: start_processing.action_controller;dur=0.19, sql.active_record;dur=1.08, instantiation.active_record;dur=0.10, process_action.action_controller;dur=233.45
 Transfer-Encoding: chunked
 

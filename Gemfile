@@ -57,3 +57,5 @@ group :test do
   gem 'rails-controller-testing'
 end
 
+
+gem "byebug", "~> 11.1"
