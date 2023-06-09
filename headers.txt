@@ -1,0 +1,19 @@
+HTTP/1.1 201 Created
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Access-Control-Expose-Headers: authorization
+Content-Type: application/json; charset=utf-8
+Vary: Accept
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg1OTE1OTQ1LCJleHAiOjE2ODU5MTk1NDUsImp0aSI6IjUyOTI5OGVmLTM1YmUtNDE5Yy05YWE0LTUwMzMyNGRjZDYyNyJ9.y5pEjUOwi8TonQx-AAVDIXpsnfsNZUm_UHklCXuJHCs
+Set-Cookie: _interslice_session=6XEpIhe8YjQ1p0EaD0OPLu%2BNRVQTNarkTlJupS6gnt%2BBzEuF92i4CwDBo%2Fkrb5g5Y7ssB%2FCiA1aVhqRlXUfAq5NL7hwBGuSAeBZdZWRXBhPIDfZizTxp1gqOTqRW6VW5yd0bNSL29uqbva2BxOj19s1UMzv9ex%2F%2BQjZqSTu6cnjoGoUN5UYoDyVVMJV2KB4MaAHF6tD8qIALdxTAWCNT5pvTQVriEpthLHt%2FiDCiJRdD%2Bah6xslz%2BIGnl3dd9Uii7M9H4jTgOxyqyDsviihMTEJpSW9xzCuuny78--oVCyU6lw1exQUnst--i87P4njMXYHPb%2BQWU9x15g%3D%3D; path=/; HttpOnly; SameSite=Lax
+ETag: W/"36cb9f6def08029b9c6bff3c14a98017"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9eeae9a8-a744-4f92-bdb5-d7972a0c2495
+X-Runtime: 0.239530
+Server-Timing: start_processing.action_controller;dur=0.15, sql.active_record;dur=2.72, instantiation.active_record;dur=0.04, process_action.action_controller;dur=229.02
+Transfer-Encoding: chunked
+
