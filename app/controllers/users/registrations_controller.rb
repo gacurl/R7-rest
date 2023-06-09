@@ -1,6 +1,11 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   respond_to :json
 
+  def sign_up(resource_name, resource)
+  #by pass the session store on the default implementation
+    sign_in resource, store: false
+  end
+  
   private
 
   def respond_with(resource, _opts = {})
