@@ -4,6 +4,7 @@ function handle_ajax(event) {
   const resultsDiv = document.getElementById('results-div');
   const restOpsDiv = document.getElementById('rest-ops');
   const listMembersButton = document.getElementById('list-members');
+  const listFactsButton = document.getElementById('list-facts');
   const createMemberButton = document.getElementById('create-member');
   const firstName = document.getElementById('member-firstName');
   const lastName = document.getElementById('member-lastName');
@@ -11,7 +12,9 @@ function handle_ajax(event) {
   const memberID = document.getElementById('member-id');
   const firstName1 = document.getElementById('member-firstName1');
   const lastName1 = document.getElementById('member-lastName1');
-  const members_path = 'http://localhost:3000/api/v1/members';
+  const deleteID = document.getElementById('delete-id');
+  const deleteMemberButton = document.getElementById('delete-member');
+  const members_path = '/api/v1/members';
 
   restOpsDiv.addEventListener('click', (event) => {
     if (event.target === listMembersButton) {
@@ -89,9 +92,32 @@ function handle_ajax(event) {
             console.log(error);
             alert(error);
           });
+        } 
+      });
+    } else if (event.target === deleteMemberButton) {
+      fetch(`${members_path}/${deleteID.value}`, 
+        { method: 'DELETE', // change the method to delete
+          headers: { 
+            'Content-Type': 'application/json',
+            'authorization': authHeader 
+          }
         }
+      ).then((response) => {
+        if (response.status === 200) {
+          response.json().then((data) => {
+            let deletedID = deleteID.value
+            resultsDiv.innerHTML = `You have removed ID number ${deletedID}.`;
+          });
+        } else {
+          response.json().then((data) => {
+            alert(`Return code ${response.status} ${response.statusText}`);
+          }).catch((error) => {
+            console.log(error);
+            alert(error);
+          });
+        } 
       });
     }
   });
 }
-document.addEventListener('DOMContentLoaded', handle_ajax(event));
+document.addEventListener('DOMContentLoaded', handle_ajax);
